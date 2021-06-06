@@ -1,10 +1,10 @@
 package base;
+import java.util.Scanner;
 
 /*
  *  UCF COP3330 Summer 2021 Assignment 1 Solution
  *  Copyright 2021 Scott Matson
  */
-
 /*
 Exercise 3 - Printing Quotes
 
@@ -26,4 +26,16 @@ Challenge
 
  */
 public class App {
+
+    public static void main(String[] args) {
+        Scanner ui = new Scanner(System.in);
+        System.out.print("What is the quote? ");
+        String quote = ui.nextLine();
+        System.out.print("Who said it? ");
+        String author = ui.nextLine();
+
+        System.out.println(author + " says, \"" + quote + "\"");
+
+
+    }
 }
